@@ -3,18 +3,40 @@ body {
   background-image: url(images/background-downsize.png);
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
-  text-align: center;
-  padding: 40px;
-  background-image: url(images/header-background.png);
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 4fr 7fr;
+  align-items: end;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 1.25rem;
 }
 
 header h1 {
-  font-size: 225%;
- }
+  font-size: 400%;
+  font-family: "Eagle Lake", serif;
+  color: #005f00;
+  text-shadow: 3px 3px 3px #fdf7ec;
+  height: 100px;
+  padding-left: 20px;
+}
+
+header h1:hover {
+  color: #55df5e;
+}
+
+header img {
+  max-width: 100%;
+}
 
 main {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #2e2019;
 }
 
 nav {
@@ -23,7 +45,7 @@ nav {
   max-width: 1000px;
   margin: 2rem auto;
   padding-bottom: 1.5rem;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   border: 4px solid rgb(236, 212, 176);
@@ -40,6 +62,7 @@ nav ul {
   justify-content: space-around; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
 }
 
 nav li {
@@ -53,11 +76,20 @@ nav li:hover {
   border-radius: 1rem;
 }
 
+nav a {
+  color: #2e2019;
+}
+
 nav img {
   margin-bottom: 1.5rem;
   border: 4px solid rgb(236, 212, 176);
   border-radius: 1rem;
   max-width: 90%;
+}
+
+nav .here {
+  background-color: rgb(236, 212, 176);
+  border-radius: 1rem;
 }
 
 .about {
@@ -96,13 +128,31 @@ nav img {
   border-radius: 0.5rem;
 }
 
+.gallery-display ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery-display li {
+  list-style-type: none;
+}
+
+.gallery-display img {
+  max-height: 300px;
+  flex: 1;
+  margin-bottom: 1.5rem;
+  border: 4px solid rgb(236, 212, 176);
+  border-radius: 0.5rem;
+}
+
 footer {
   text-align: center;
   background-color: blanchedalmond;
   max-width: 1000px;
   margin: 2rem auto;
-  padding-bottom: 2.5rem;
-  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 1.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
   border: 4px solid rgb(236, 212, 176);
@@ -111,7 +161,7 @@ footer {
 
 footer h2 {
   font-size: 175%;
-  padding-bottom: 0.75rem;
+  padding-bottom: 1.5rem;
 }
 
 footer ul {
@@ -123,6 +173,17 @@ footer ul {
 footer li {
   font-size: 150%;
   list-style-type: none;
+  padding: 1rem;
+}
+
+footer li:hover {
+  background-color: rgb(236, 212, 176);
+  border-radius: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #2e2019;
 }
 
 img {
